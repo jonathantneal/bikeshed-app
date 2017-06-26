@@ -1,0 +1,47 @@
+{
+  "name": "bikeshed-app",
+  "version": "0.1.0",
+  "description": "Easily create and edit web specifications",
+  "author": "Jonathan Neal <jonathantneal@hotmail.com>",
+  "license": "CC0-1.0",
+  "repository": "jonathantneal/bikeshed-app",
+  "homepage": "https://github.com/jonathantneal/bikeshed-app#readme",
+  "bugs": "https://github.com/jonathantneal/bikeshed-app/issues",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "build": "node build",
+    "clean": "git clean -X -d -f",
+    "start": "nwbuild -p win64,osx64,linux64 -o ./dist --macIcns ./assets/bikeshed.icns -r ./src",
+    "test": "echo 'Running tests...'; npm run test:js",
+    "test:js": "eslint src/*.js --cache --ignore-pattern .gitignore"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^4.1.0",
+    "eslint-config-dev": "^2.0.0",
+    "nw-builder": "^3.4.1"
+  },
+  "eslintConfig": {
+    "extends": "dev"
+  },
+  "keywords": [
+    "bikeshed",
+    "specification",
+    "spec",
+    "generator",
+    "generate",
+    "creator",
+    "create",
+    "md",
+    "markdown",
+    "w3c",
+    "whatwg"
+  ],
+  "private": true
+}

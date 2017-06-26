@@ -1,0 +1,14 @@
+{
+  "name": "bikeshed",
+  "description": "Create Bikeshed specs",
+  "version": "1.0.0",
+  "main": "bikeshed.html",
+  "keywords": [ "bikeshed", "node-webkit" ],
+  "window": {
+    "frame": true,
+    "width": 1200,
+    "height": 675
+  },
+  "chromium-args": "--disable-devtools",
+  "private": true
+}
