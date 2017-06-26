@@ -1,0 +1,9 @@
+cache
+dist
+node_modules
+.*
+!.appveyor.yml
+!.editorconfig
+!.gitignore
+!.travis.yml
+*.log*
